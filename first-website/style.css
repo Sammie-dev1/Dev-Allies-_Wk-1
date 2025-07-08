@@ -171,7 +171,11 @@
             color: #222;
         }
 
-        /* Contact Form */
+        h3 {
+    color: #222;
+}
+
+/* Contact Form */
         .contact-form {
             background: white;
             padding: 2rem;
@@ -215,10 +219,13 @@
             font-size: 1rem;
             cursor: pointer;
             transition: transform 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .btn:hover {
             transform: translateY(-2px);
+            background: linear-gradient(135deg, #c02828 0%, #e48110 100%);
+            color: #fff;
         }
 
         /* Footer */
@@ -226,18 +233,14 @@
             background: linear-gradient(135deg, #e48110 0%, #c02828 100%);
             color: white;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-            font: size 2.5rem;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 1rem;
             letter-spacing: 1px;
             font-weight: 500;
         }
 
-        h3 {
-    color: #222;
-}
-
-/* Responsive Design */
+        /* Responsive Design */
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;

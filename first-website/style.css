@@ -89,7 +89,8 @@
         }
 
         .intro-text {
-            text-align: left;         
+            text-align: left;
+                    
         }
 
         .hero-content img {
@@ -103,7 +104,6 @@
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            color: #667eea;
         }
 
         .hero p {
@@ -119,8 +119,11 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
+        h1, h2, .skill-card h3 {
+            color: #c02828;
+        }
+
         .content-card h2 {
-            color: #e166ea;
             margin-bottom: 1rem;
         }
 
@@ -165,8 +168,7 @@
         }
 
         .skill-card h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
+            color: #222;
         }
 
         /* Contact Form */
@@ -221,14 +223,21 @@
 
         /* Footer */
         footer {
-            background: #333;
+            background: linear-gradient(135deg, #e48110 0%, #c02828 100%);
             color: white;
             text-align: center;
             padding: 2rem 0;
             margin-top: 4rem;
+            font: size 2.5rem;
+            letter-spacing: 1px;
+            font-weight: 500;
         }
 
-        /* Responsive Design */
+        h3 {
+    color: #222;
+}
+
+/* Responsive Design */
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;

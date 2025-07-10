@@ -144,20 +144,24 @@
         }
 
         h1, h2, .skill-card h3 {
+            font: size 3rem;
             color: #c02828;
         }
 
         .content-card h2 {
-            margin-bottom: 2rem
+            font-size: 2rem;
+            margin-bottom: 1rem
         }
 
         .content-card p {
             margin-bottom: 1rem;
+            font-style: '#333';
         }
 
         .horizontal-cards {
             display: flex;
             flex-direction: row;
+            flex-wrap:wrap
             gap: 2rem;
             justify-content: center;
             align-items: flex-start;
@@ -166,8 +170,15 @@
         }
 
         .content-card {
+            background: #fff;
+            padding: 4rem
+              border-radius: "10px";
+               box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+              flex: 1 1 300px;
             min-width: 300px;
-            flex: 0 0 350px; 
+            max-width:  500px;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease;
         }
 
         /* Skills Section */
@@ -192,19 +203,23 @@
         }
 
         .skill-card h3 {
-            color: #222;
+            font-size: 1.5rem;
+            color: hwb(0 16% 42%);
         }
 
         h3 {
-    color: #222;
+    color: #c00b0b;
 }
 
 /* Contact Form */
         .contact-form {
             background: white;
-            padding: 2rem;
-            border-radius: 10px;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width:600px;
+            max-height: 600px
+            margin: 0 auto 2rem;
         }
 
         .form-group {
@@ -251,6 +266,22 @@
             background: linear-gradient(135deg, #c02828 0%, #e48110 100%);
             color: #fff;
         }
+        socials {
+         margin-top: 1.5rem;
+        display: flex;
+      gap: 1rem;
+}   
+
+.socials a {
+  font-size: 1.5rem;
+  color: #c02828;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  color: #e48110;
+  transform: translateY(-2px);
+}
 
         /* Footer */
         footer {
